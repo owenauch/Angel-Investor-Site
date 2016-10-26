@@ -1,0 +1,539 @@
+main
+{
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+body
+{
+	background-color: black;
+	font-family: 'Exo 2', sans-serif;	
+	font-size: 1vw;
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	background-color: #323232;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#name
+{
+	font-size: 40px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	margin-left: 55px;
+	margin-top: 7px;
+	display: inline-block;
+	font-weight: 400;
+	position: relative;
+}
+
+#subtitle
+{
+	position: absolute;
+	font-size: 20px;
+	font-weight: lighter;
+	width: 100%;
+	text-align: center;
+	bottom: -30px;
+	padding: 0;
+	margin: 0;
+}
+
+#line
+{
+	width: 210px;
+	height: 1px;
+	background-color: white;
+	position: absolute;
+	left: -10px;
+	margin-top: 3px;
+}
+
+.nav-icon
+{
+	position: absolute;
+	width: 150px;
+	height: 100px;
+	right: 2%;
+	top: 0;
+	text-align: center;
+}
+
+.nav-icon img
+{
+	position: absolute;
+	top: 15px;
+	right: 43px;
+}
+
+.rotate
+{
+	animation-name: rotated;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotated 
+{
+    from 
+    {
+    	-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+	 to 
+	 {
+    	-webkit-transform: rotate(180deg);
+	    -moz-transform: rotate(180deg);
+	    -o-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	    transform: rotate(180deg);
+	}
+}
+
+nav
+{
+	position: absolute;
+	right: 0;
+	width: 150px;
+	top: 100px;
+	text-align: center;
+	right: 2%;
+	display: none;
+}
+
+#navbar
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 100px;
+	background-color: #323232;
+}
+
+#navbar li
+{
+	display: inline-block;
+	padding-right: 9%;
+	font-size: 25px;
+	border-top: 1px solid white;
+}
+
+#navbar a:hover
+{
+	color: #1ad1ff;
+}
+
+.intro-picture
+{
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 800px;
+	background-image: url("Images/RocketCrop8.png");
+	background-size: cover;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.headline
+{
+	color: white;
+	font-weight: lighter;
+	font-size: 50px;
+	position: fixed;
+	top: 275px;
+	left: 5%;
+}
+
+.headline-scroll
+{
+	position: absolute;
+	top: 450px;
+}
+
+.break
+{
+	display: block;
+}
+
+.emp1, .emp2
+{
+	-webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.emp-scroll
+{
+	color: #1ad1ff;
+	font-weight: bolder;
+}
+
+.meet-nick
+{
+	width: 100%;
+	background-color: #323232;
+	height: 615px;
+	position: relative;
+	float: left;
+	margin: 0;
+	margin-top: 800px;
+	padding: 0;
+	text-align: center;
+}
+
+.subhead
+{
+	color: #1ad1ff;
+	margin: 20px auto;
+	font-size: 30px;
+	display: table;
+}
+
+.bio-pic
+{
+	border-radius: 50%;
+	transform:translateY(-50%);
+	overflow: hidden;
+	width: 150px;
+	margin: 100px auto;
+}
+
+.bio-pic img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.bio
+{
+	color: white;
+	font-size: 15px;
+	position: absolute;
+	top: 200px;
+	margin: 50px;
+}
+
+.gray-sec
+{
+	width: 100%;
+	background-color: #464646;
+	padding-bottom: 50px;
+	float: left;
+	text-align: center;
+}
+
+.grid-wrap
+{
+	text-align: center;
+}
+
+.company
+{
+	overflow: hidden;
+	height: 85px;
+	width: 170px;
+	display: inline-block;
+	margin: 15px 20px;
+	background-color: white;
+}
+
+.company:hover
+{
+	-webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.75);
+}
+
+.company img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.team
+{
+	width: 100%;
+	background-color: #323232;
+	float: left;
+}
+
+.member-wrap
+{
+	overflow: hidden;
+	height: 220px;
+	width: 134px;
+	display: inline-block;
+	margin: 5px 20px;
+}
+
+.member-pic
+{
+	height: 134px;
+	width: 100%;
+	background-color: blue;
+}
+
+.member-pic img
+{
+	height: 100%;
+}
+
+.position
+{
+	display: block;
+	margin: 0;
+	color: white;
+	font-weight: lighter;
+	font-size: 17px;
+	margin-top: 8px;
+}
+
+.social-icon
+{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin: 20px 10px;
+	transform:translateY(-50%);
+}
+
+.social-icon img
+{
+	height: 100%;
+}
+
+.gray-sec h1
+{
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	margin: 0 10px;
+}
+
+form 
+{
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	margin: 0;
+}
+
+.gray-sec p
+{
+	color: white;
+	font-size: 18px;
+}
+
+.gray-sec .area
+{
+	background-color: #323232;
+	border: 0;
+	font-size: 18px;
+}
+
+.oneline
+{
+	width: 250px;
+	height: 25px;
+}
+
+.gray-sec input[type=button]
+{
+	color: white;
+	background-color: #1ad1ff;
+	width: 100px;
+	height: 50px;
+	border: 0;
+	font-size: 18px;
+	-webkit-transition: box-shadow .5s;
+    transition: box-shadow .5s;
+}
+
+.area
+{
+	-webkit-transition: box-shadow .5s;
+    transition: box-shadow .5s;
+}
+
+.area:focus, .gray-sec input[type=button]:focus
+{
+	border: 1px solid #1ad1ff;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+}
+
+
+@media screen and (min-width: 615px)
+{
+	.bio
+	{
+		font-size: 20px;
+		top: 400px;
+	}
+
+	.bio-pic
+	{
+		width: 287px;
+		margin: 180px auto;
+	}
+
+	.subhead
+	{
+		font-size: 40px;
+	}
+
+	.company
+	{
+		height: 120px;
+		width: 240px;
+		margin: 20px 30px;
+	}
+
+	.member-wrap
+	{
+		height: 300px;
+		width: 200px;
+		margin: 30px 50px;
+	}
+
+	.member-pic
+	{
+		height: 200px;
+	}
+
+	.position
+	{
+		font-size: 20px;
+		margin-top: 25px;
+	}
+
+	.social-icon
+	{
+		height: 26px;
+		width: 26px;
+		margin: 20px 10px;
+	}
+}
+
+
+@media screen and (min-width: 950px)
+{
+	.meet-nick
+	{
+		text-align: initial;
+	}
+
+	.bio-pic
+	{
+		width: 30%;
+		position: relative;
+		top: 216px;
+		left: 7%;
+		margin: 0;
+	}
+
+	.bio
+	{
+		display: inline-block;
+		width: 47%;
+		margin: 0;
+		position: absolute;
+		float: right;
+		right: 5%;
+		top: 150px;
+	}
+
+	.headline
+	{
+		left: 45%;
+	}
+
+	.break
+	{
+		display: inline;
+	}
+
+	.subhead
+	{
+		font-size: 50px;
+	}
+
+	.company
+	{
+		height: 150px;
+		width: 300px;
+		margin: 30px 40px;
+	}
+
+	nav
+	{
+		position: absolute;
+		right: 0;
+		height: 100px;
+		width: 600px;
+		top: 0;
+		display: initial;
+	}
+
+	#navbar
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		line-height: 100px;
+		border: 0;
+		background-color: initial;
+	}
+
+	#navbar li
+	{
+		display: inline-block;
+		padding-right: 9%;
+		font-size: 25px;
+		border: 0;
+	}
+
+	#navbar a:hover
+	{
+		color: #1ad1ff;
+	}
+
+	.nav-icon
+	{
+		display: none;
+	}
+}
+
+input, textarea
+{
+	color: white;
+}
+
+
+
